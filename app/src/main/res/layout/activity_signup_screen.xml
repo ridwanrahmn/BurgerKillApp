@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_item"
+    android:orientation="vertical"
+    tools:context=".SignupScreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonback"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/buttonback"
+            android:background="@color/bg_item">
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Akun"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="40sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan isi form di bawah ini"
+            android:fontFamily="@font/montserratsemibold"
+            android:alpha="0.6"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:layout_width="282dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_login"
+            android:hint="Username"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="13sp"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="282dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_login"
+            android:hint="Password"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="13sp"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="282dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_login"
+            android:hint="Verify password"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="13sp"
+            android:padding="15dp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signup"
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:text="Sign Up"
+        android:background="@drawable/shape_loginbutton"
+        android:fontFamily="@font/montserratbold"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"/>
+</LinearLayout>
